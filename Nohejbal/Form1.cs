@@ -111,8 +111,8 @@ namespace Nohejbal
 
             for(int i=0;i<hraci.Count;i++)
             {
-                int pocettymu = zamichat.Count/3 ;                           //tady na tom radku musime zjistit kolik bude tymu
-                int x = i % pocettymu;
+                double pocettymu =Math.Ceiling(Convert.ToDouble(zamichat.Count)/3) ;                           //tady na tom radku musime zjistit kolik bude tymu
+                double x =( i % (pocettymu));
                 if (x == 0)
                     Tym1.Add(zamichat[i]);
                 if (x ==1)
